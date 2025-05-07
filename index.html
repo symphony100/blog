@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>symphony</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Sans JP', sans-serif;
+      background: linear-gradient(to right, #ece9e6, #ffffff);
+      color:  #000000;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      height: 80px;
+      background: #1b1b2f;
+      color: #f5f5f5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem;
+      font-size: 1.8rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 1rem;
+      font-weight: normal;
+    }
+
+    .nav-links a {
+      color: #f5f5f5;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #b39ddb;
+    }
+
+    main {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+    
+        .sidebar {
+      flex: 1;
+      padding-top: 1rem;
+    }
+
+    .sidebar h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #7e57c2;
+      display: inline-block;
+      color: #1b1b2f;
+    }
+
+    .sidebar a {
+      display: block;
+      text-decoration: none;
+      color: #444;
+      font-size: 1rem;
+      margin: 0.5rem 0;
+      padding: 0.3rem;
+      border-radius: 4px;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .sidebar a:hover {
+      background: #e0d7f5;
+      color: #7e57c2;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin: 3rem 0 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 3px solid #7e57c2;
+      background: linear-gradient(to right, #7e57c2 0%, #b39ddb 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+
+    .content {
+      flex: 3;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin: 3rem 0 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 3px solid #7e57c2;
+      background: linear-gradient(to right, #7e57c2 0%, #b39ddb 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .post-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      margin-bottom: 2.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .post-link:hover .article {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .article {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+      transition: inherit;
+    }
+
+    .article h2 {
+      margin-top: 0;
+      color: #1b1b2f;
+      font-size: 1.6rem;
+      border-left: 6px solid #7e57c2;
+      padding-left: 0.75rem;
+    }
+
+    .article p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-top: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #999;
+      font-size: 0.9rem;
+      background-color: #f0f0f5;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>symphony</div>
+    <nav class="nav-links">
+      <a href="https://github.com/" target="_blank">GitHub</a>
+      <a href="https://stellarium-web.org/" target="_blank">Stellarium</a>
+      <a href="mailto:example@example.com">お問い合わせ</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="content">
+      <h1 class="section-title">symphonyブログ</h1>
+
+      <a class="post-link" href="https://github.com/" target="_blank" rel="noopener">
+        <div class="article">
+          <h2>ようこそ、symphonyへ！</h2>
+          <p>このブログは、わしの好きなことを語る場所や。プログラミング、天体観測、そしてうまいもん。  
+          GitHubで公開しとるコードもぜひ見てや。</p>
+        </div>
+      </a>
+
+      <a class="post-link" href="https://stellarium-web.org/" target="_blank" rel="noopener">
+        <div class="article">
+          <h2>星空観察のススメ</h2>
+          <p>横浜でも見える星、意外とあるで。双眼鏡ひとつで宇宙はぐっと近くなる。おすすめは Stellarium。</p>
+        </div>
+      </a>
+    </div>
+    <aside class="sidebar">
+      <h3>リンク集</h3>
+      <a href="https://github.com/">GitHub</a>
+      <a href="https://twitter.com/">Twitter</a>
+      <a href="https://stellarium-web.org/">Stellarium</a>
+      <a href="https://example.com">英大の作品集</a>
+    </aside>
+  </main>
+
+  <footer>
+    &copy; 2025 Symphony System Group
+  </footer>
+
+
+</body>
+</html>

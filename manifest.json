@@ -1,0 +1,20 @@
+{
+  "name": "Symphony Blog",
+  "short_name": "Symphony Blog",
+  "start_url": "/symphony/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/symphony/symphony.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/symphony/symphony.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
